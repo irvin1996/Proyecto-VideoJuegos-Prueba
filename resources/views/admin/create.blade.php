@@ -6,7 +6,7 @@
         <div class="col-md-12">
             <form action="{{route('admin.create')}}" method="post" enctype="multipart/form-data">
               <div class="form-group">
-                  <label for="nombre">Nombre</label>
+                  <label for="nombre">Hola</label>
                   <input
                   type="text"
                   class="form-control"
