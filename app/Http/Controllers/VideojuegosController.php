@@ -38,7 +38,7 @@ public function vjAdminCreate(Request $request)
           'fechaEstrenoInicial'=>$request->input('fechaEstrenoInicial'),
           'imagen'=>$ruta
         ]);
-        $user=Auth::user();
+        $user=Auth::user()->id;
         $vj->user()->associate($user);
         $vj->save();
         $vj->plataformas()->attach($request->input('plataformas')===null ? []:$request->input('plataformas'));
